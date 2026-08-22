@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgaboutdetail" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F8EDE2"/><stop offset="0.48" stop-color="#EACDB9"/><stop offset="1" stop-color="#D0A283"/>
+    </linearGradient>
+    <radialGradient id="hlaboutdetail" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgaboutdetail" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#D0A283" stop-opacity="0"/><stop offset="1" stop-color="#D0A283" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blaboutdetail" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="70"/></filter>
+    <filter id="graboutdetail"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="700" height="700" fill="url(#bgaboutdetail)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blaboutdetail)">
+    <ellipse cx="434" cy="210" rx="294" ry="210" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="140" cy="574" rx="322" ry="210" fill="#D0A283" opacity="0.62"/>
+    <ellipse cx="602" cy="616" rx="238" ry="182" fill="#A86A46" opacity="0.34"/>
+  </g>
+
+  <rect width="700" height="700" fill="url(#hlaboutdetail)"/>
+  <rect width="700" height="700" fill="url(#vgaboutdetail)"/>
+  <g fill="none" stroke="#A86A46" stroke-opacity="0.4" stroke-width="2" transform="translate(350 350)">
+    <ellipse rx="210" ry="280" transform="rotate(-22)"/>
+    <ellipse rx="210" ry="280" transform="rotate(22)"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="2" transform="translate(350 350)">
+    <ellipse rx="294" ry="210"/>
+  </g>
+  <path d="M560 112c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="700" height="700" filter="url(#graboutdetail)" opacity="0.055"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgserviceskin" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F7E6DA"/><stop offset="0.48" stop-color="#EBC5B2"/><stop offset="1" stop-color="#D19A82"/>
+    </linearGradient>
+    <radialGradient id="hlserviceskin" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgserviceskin" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#D19A82" stop-opacity="0"/><stop offset="1" stop-color="#D19A82" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blserviceskin" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="100"/></filter>
+    <filter id="grserviceskin"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="900" height="1000" fill="url(#bgserviceskin)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blserviceskin)">
+    <ellipse cx="558" cy="300" rx="378" ry="300" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="180" cy="820" rx="414" ry="300" fill="#D19A82" opacity="0.62"/>
+    <ellipse cx="774" cy="880" rx="306" ry="260" fill="#C0785E" opacity="0.34"/>
+  </g>
+
+  <rect width="900" height="1000" fill="url(#hlserviceskin)"/>
+  <rect width="900" height="1000" fill="url(#vgserviceskin)"/>
+  <g fill="none" stroke="#C0785E" stroke-opacity="0.4" stroke-width="2" transform="translate(450 500)">
+    <ellipse rx="270" ry="400" transform="rotate(-22)"/>
+    <ellipse rx="270" ry="400" transform="rotate(22)"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="2" transform="translate(450 500)">
+    <ellipse rx="378" ry="300"/>
+  </g>
+  <path d="M720 160c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="900" height="1000" filter="url(#grserviceskin)" opacity="0.055"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgskindetail" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F8E9DE"/><stop offset="0.48" stop-color="#EBC8B6"/><stop offset="1" stop-color="#CF9880"/>
+    </linearGradient>
+    <radialGradient id="hlskindetail" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgskindetail" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#CF9880" stop-opacity="0"/><stop offset="1" stop-color="#CF9880" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blskindetail" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="100"/></filter>
+    <filter id="grskindetail"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="1000" height="760" fill="url(#bgskindetail)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blskindetail)">
+    <ellipse cx="620" cy="228" rx="420" ry="228" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="200" cy="623" rx="460" ry="228" fill="#CF9880" opacity="0.62"/>
+    <ellipse cx="860" cy="668" rx="340" ry="197" fill="#C0785E" opacity="0.34"/>
+  </g>
+
+  <rect width="1000" height="760" fill="url(#hlskindetail)"/>
+  <rect width="1000" height="760" fill="url(#vgskindetail)"/>
+  <g fill="none" stroke="#C0785E" stroke-opacity="0.4" stroke-width="3">
+    <circle cx="660" cy="304" r="304"/>
+    <path d="M60 760 C 80 395, 440 182, 960 106"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="3">
+    <circle cx="660" cy="304" r="380"/>
+  </g>
+  <path d="M800 121c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="1000" height="760" filter="url(#grskindetail)" opacity="0.055"/>
+</svg>

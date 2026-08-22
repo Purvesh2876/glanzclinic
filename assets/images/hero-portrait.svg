@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgheroportrait" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F6E2D4"/><stop offset="0.48" stop-color="#E9C4AC"/><stop offset="1" stop-color="#CE9877"/>
+    </linearGradient>
+    <radialGradient id="hlheroportrait" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgheroportrait" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#CE9877" stop-opacity="0"/><stop offset="1" stop-color="#CE9877" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blheroportrait" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="120"/></filter>
+    <filter id="grheroportrait"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bgheroportrait)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blheroportrait)">
+    <ellipse cx="558" cy="360" rx="378" ry="360" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="180" cy="983" rx="414" ry="360" fill="#CE9877" opacity="0.62"/>
+    <ellipse cx="774" cy="1056" rx="306" ry="312" fill="#A86A46" opacity="0.34"/>
+  </g>
+
+  <rect width="900" height="1200" fill="url(#hlheroportrait)"/>
+  <rect width="900" height="1200" fill="url(#vgheroportrait)"/>
+  <g fill="none" stroke="#A86A46" stroke-opacity="0.42" stroke-width="2">
+    <path d="M72 -60 C 495 336, 108 744, 702 1272"/>
+    <path d="M306 -96 C 738 360, 414 792, 972 960"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2">
+    <path d="M-45 696 C 315 504, 558 888, 945 624"/>
+  </g>
+  <path d="M720 192c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="900" height="1200" filter="url(#grheroportrait)" opacity="0.055"/>
+</svg>

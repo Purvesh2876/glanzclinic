@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bghomoeodetail" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F2EEE2"/><stop offset="0.48" stop-color="#DEDAC4"/><stop offset="1" stop-color="#B4B59A"/>
+    </linearGradient>
+    <radialGradient id="hlhomoeodetail" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vghomoeodetail" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#B4B59A" stop-opacity="0"/><stop offset="1" stop-color="#B4B59A" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blhomoeodetail" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="100"/></filter>
+    <filter id="grhomoeodetail"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="1000" height="760" fill="url(#bghomoeodetail)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blhomoeodetail)">
+    <ellipse cx="620" cy="228" rx="420" ry="228" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="200" cy="623" rx="460" ry="228" fill="#B4B59A" opacity="0.62"/>
+    <ellipse cx="860" cy="668" rx="340" ry="197" fill="#7E8A6F" opacity="0.34"/>
+  </g>
+
+  <rect width="1000" height="760" fill="url(#hlhomoeodetail)"/>
+  <rect width="1000" height="760" fill="url(#vghomoeodetail)"/>
+  <g fill="none" stroke="#7E8A6F" stroke-opacity="0.42" stroke-width="3">
+    <path d="M80 -38 C 550 212, 120 471, 780 805"/>
+    <path d="M340 -60 C 820 228, 460 501, 1080 608"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3">
+    <path d="M-50 440 C 350 319, 620 562, 1050 395"/>
+  </g>
+  <path d="M800 121c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="1000" height="760" filter="url(#grhomoeodetail)" opacity="0.055"/>
+</svg>

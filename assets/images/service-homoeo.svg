@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgservicehomoeo" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F1EDE0"/><stop offset="0.48" stop-color="#DDD9C2"/><stop offset="1" stop-color="#B6B79C"/>
+    </linearGradient>
+    <radialGradient id="hlservicehomoeo" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgservicehomoeo" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#B6B79C" stop-opacity="0"/><stop offset="1" stop-color="#B6B79C" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blservicehomoeo" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="100"/></filter>
+    <filter id="grservicehomoeo"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="900" height="1000" fill="url(#bgservicehomoeo)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blservicehomoeo)">
+    <ellipse cx="558" cy="300" rx="378" ry="300" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="180" cy="820" rx="414" ry="300" fill="#B6B79C" opacity="0.62"/>
+    <ellipse cx="774" cy="880" rx="306" ry="260" fill="#7E8A6F" opacity="0.34"/>
+  </g>
+
+  <rect width="900" height="1000" fill="url(#hlservicehomoeo)"/>
+  <rect width="900" height="1000" fill="url(#vgservicehomoeo)"/>
+  <g fill="none" stroke="#7E8A6F" stroke-opacity="0.4" stroke-width="2">
+    <circle cx="594" cy="400" r="360"/>
+    <path d="M54 1000 C 72 520, 396 240, 864 140"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="2">
+    <circle cx="594" cy="400" r="450"/>
+  </g>
+  <path d="M720 160c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="900" height="1000" filter="url(#grservicehomoeo)" opacity="0.055"/>
+</svg>

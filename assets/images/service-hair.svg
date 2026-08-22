@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgservicehair" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F4DFCD"/><stop offset="0.48" stop-color="#E3BE9E"/><stop offset="1" stop-color="#C89163"/>
+    </linearGradient>
+    <radialGradient id="hlservicehair" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgservicehair" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#C89163" stop-opacity="0"/><stop offset="1" stop-color="#C89163" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blservicehair" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="100"/></filter>
+    <filter id="grservicehair"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="900" height="1000" fill="url(#bgservicehair)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blservicehair)">
+    <ellipse cx="558" cy="300" rx="378" ry="300" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="180" cy="820" rx="414" ry="300" fill="#C89163" opacity="0.62"/>
+    <ellipse cx="774" cy="880" rx="306" ry="260" fill="#A9743F" opacity="0.34"/>
+  </g>
+
+  <rect width="900" height="1000" fill="url(#hlservicehair)"/>
+  <rect width="900" height="1000" fill="url(#vgservicehair)"/>
+  <g fill="none" stroke="#A9743F" stroke-opacity="0.42" stroke-width="2">
+    <path d="M72 -50 C 495 280, 108 620, 702 1060"/>
+    <path d="M306 -80 C 738 300, 414 660, 972 800"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2">
+    <path d="M-45 580 C 315 420, 558 740, 945 520"/>
+  </g>
+  <path d="M720 160c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="900" height="1000" filter="url(#grservicehair)" opacity="0.055"/>
+</svg>

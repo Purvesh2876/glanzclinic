@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgbridal" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F9EBE0"/><stop offset="0.48" stop-color="#EFCEBB"/><stop offset="1" stop-color="#D5A187"/>
+    </linearGradient>
+    <radialGradient id="hlbridal" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgbridal" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#D5A187" stop-opacity="0"/><stop offset="1" stop-color="#D5A187" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blbridal" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="140"/></filter>
+    <filter id="grbridal"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bgbridal)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blbridal)">
+    <ellipse cx="868" cy="270" rx="588" ry="270" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="280" cy="738" rx="644" ry="270" fill="#D5A187" opacity="0.62"/>
+    <ellipse cx="1204" cy="792" rx="476" ry="234" fill="#B0724A" opacity="0.34"/>
+  </g>
+
+  <rect width="1400" height="900" fill="url(#hlbridal)"/>
+  <rect width="1400" height="900" fill="url(#vgbridal)"/>
+  <g fill="none" stroke="#B0724A" stroke-opacity="0.42" stroke-width="3">
+    <path d="M112 -45 C 770 252, 168 558, 1092 954"/>
+    <path d="M476 -72 C 1148 270, 644 594, 1512 720"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3">
+    <path d="M-70 522 C 489 378, 868 666, 1470 468"/>
+  </g>
+  <path d="M1120 144c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="1400" height="900" filter="url(#grbridal)" opacity="0.055"/>
+</svg>

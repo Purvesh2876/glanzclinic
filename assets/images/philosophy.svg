@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgphilosophy" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#F4E4D8"/><stop offset="0.48" stop-color="#E4C2AE"/><stop offset="1" stop-color="#C08F72"/>
+    </linearGradient>
+    <radialGradient id="hlphilosophy" cx="0.66" cy="0.26" r="0.62">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vgphilosophy" cx="0.5" cy="0.5" r="0.78">
+      <stop offset="0.55" stop-color="#C08F72" stop-opacity="0"/><stop offset="1" stop-color="#C08F72" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="blphilosophy" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="140"/></filter>
+    <filter id="grphilosophy"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="1400" height="800" fill="url(#bgphilosophy)"/>
+
+  <!-- soft form suggesting a figure / organic mass -->
+  <g filter="url(#blphilosophy)">
+    <ellipse cx="868" cy="240" rx="588" ry="240" fill="#FFFFFF" opacity="0.62"/>
+    <ellipse cx="280" cy="656" rx="644" ry="240" fill="#C08F72" opacity="0.62"/>
+    <ellipse cx="1204" cy="704" rx="476" ry="208" fill="#8A5334" opacity="0.34"/>
+  </g>
+
+  <rect width="1400" height="800" fill="url(#hlphilosophy)"/>
+  <rect width="1400" height="800" fill="url(#vgphilosophy)"/>
+  <g fill="none" stroke="#8A5334" stroke-opacity="0.4" stroke-width="3">
+    <circle cx="924" cy="320" r="320"/>
+    <path d="M84 800 C 112 416, 616 192, 1344 112"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="3">
+    <circle cx="924" cy="320" r="400"/>
+  </g>
+  <path d="M1120 128c1.8 12 4.4 14.6 16.5 16.5-12.1 1.9-14.7 4.5-16.5 16.5-1.8-12-4.4-14.6-16.5-16.5 12.1-1.9 14.7-4.5 16.5-16.5z" fill="#FFFFFF" opacity="0.65"/>
+  <rect width="1400" height="800" filter="url(#grphilosophy)" opacity="0.055"/>
+</svg>

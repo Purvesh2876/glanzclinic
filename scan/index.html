@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GLANZ — Digital Card | Dr. Sakshi Prajapati</title>
+<meta name="description" content="GLANZ digital visiting card — call, WhatsApp, book a consultation or get directions to our skin, hair and homoeopathy clinic in Nikol, Ahmedabad.">
+<meta name="theme-color" content="#2B1B14">
+<link rel="canonical" href="https://www.glanzhealth.com/scan/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="GLANZ">
+<meta property="og:title" content="GLANZ — Skin, Hair &amp; Homoeopathy">
+<meta property="og:description" content="Dr. Sakshi Prajapati · Nikol, Ahmedabad. Call, WhatsApp, book a consultation or explore our services.">
+<meta property="og:url" content="https://www.glanzhealth.com/scan/">
+<meta property="og:image" content="https://www.glanzhealth.com/assets/logo/glanz-lockup.png">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GLANZ — Skin, Hair &amp; Homoeopathy">
+<meta name="twitter:description" content="Dr. Sakshi Prajapati · Nikol, Ahmedabad.">
+<meta name="twitter:image" content="https://www.glanzhealth.com/assets/logo/glanz-lockup.png">
+
+<link rel="icon" href="../assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/logo/glanz-symbol.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/scan.css">
+</head>
+
+<body class="scan-page">
+
+<main class="scan" id="main">
+
+  <!-- ====================================================================
+       CARD HEADER
+       Text below mirrors the printed visiting card.
+       ==================================================================== -->
+  <header class="scan-card">
+    <img class="scan-card__symbol" src="../assets/logo/glanz-symbol.png" alt="" width="320" height="320" fetchpriority="high">
+    <img class="scan-card__wordmark" src="../assets/logo/glanz-wordmark-tagline.png" alt="GLANZ — Skin, Hair, Homoeopathy" width="680" height="216">
+    <h1 class="sr-only">GLANZ — Skin, Hair &amp; Homoeopathy</h1>
+
+    <div class="scan-card__divider" aria-hidden="true"><span></span></div>
+
+    <h2 class="scan-card__doctor" data-scan="doctor">Dr. Sakshi Prajapati</h2>
+    <p class="scan-card__statement" data-scan="statement">
+      Personalised skin, hair and homoeopathic care — planned around you, in Nikol, Ahmedabad.
+    </p>
+  </header>
+
+  <!-- ====================================================================
+       PRIMARY ACTIONS
+       ==================================================================== -->
+  <nav class="scan-actions" aria-label="Quick actions">
+    <a class="action action--primary" data-scan-link="book" href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+      Book a Consultation
+    </a>
+    <div class="scan-actions__row">
+      <a class="action" data-scan-link="phone" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5L17 13l4 1.5v3a2 2 0 01-2.2 2A17 17 0 013.5 5.2 2 2 0 015.5 3z"/></svg>
+        Call Us
+      </a>
+      <a class="action" data-scan-link="whatsapp" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3a9 9 0 00-7.7 13.6L3.4 21l4.5-1.2A9 9 0 1012 3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1.2-.5 1.2-1.1l-1.6-.8-.9 1a5.6 5.6 0 01-2.8-2.8l1-.9-.8-1.6c-.6 0-1.1.6-1.1 1.2z" fill="currentColor" stroke="none"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <div class="scan-actions__row">
+      <a class="action" data-scan-link="maps" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        Directions
+      </a>
+      <button class="action" type="button" id="saveContact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v11m0 0l-4-4m4 4l4-4M4 17v2.5A1.5 1.5 0 005.5 21h13a1.5 1.5 0 001.5-1.5V17"/></svg>
+        Save Contact
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       SERVICES — rendered from scanContent in js/scan.js
+       ==================================================================== -->
+  <section class="scan-section" aria-labelledby="scanServicesTitle">
+    <h2 class="scan-section__title" id="scanServicesTitle">Explore Our Services</h2>
+    <div class="scan-cats" id="scanCats">
+      <!-- Populated by js/scan.js — edit the scanContent object there -->
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONNECT
+       ==================================================================== -->
+  <section class="scan-section" aria-labelledby="scanConnectTitle">
+    <h2 class="scan-section__title" id="scanConnectTitle">Connect</h2>
+    <div class="scan-links">
+      <a class="scan-link" data-scan-link="website" href="../">
+        <span class="scan-link__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15 0 18M12 3c-2.5 2.6-2.5 15 0 18"/></svg>
+        </span>
+        <span class="scan-link__text">
+          <span class="scan-link__label">Visit our website</span>
+          <span class="scan-link__value" data-scan="website">www.glanzhealth.com</span>
+        </span>
+        <span class="scan-link__go" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </span>
+      </a>
+
+      <a class="scan-link" data-scan-link="instagram" href="#" target="_blank" rel="noopener">
+        <span class="scan-link__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="scan-link__text">
+          <span class="scan-link__label">Instagram</span>
+          <span class="scan-link__value" data-scan="instagramHandle">@glanz_skin.hair.homeo</span>
+        </span>
+        <span class="scan-link__go" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </span>
+      </a>
+
+      <a class="scan-link" data-scan-link="email" href="#">
+        <span class="scan-link__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 12.5l8.5-6"/></svg>
+        </span>
+        <span class="scan-link__text">
+          <span class="scan-link__label">Email</span>
+          <span class="scan-link__value" data-scan="email">glanzbydrsakshi@gmail.com</span>
+        </span>
+        <span class="scan-link__go" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </span>
+      </a>
+
+      <a class="scan-link" data-scan-link="maps" href="#" target="_blank" rel="noopener">
+        <span class="scan-link__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </span>
+        <span class="scan-link__text">
+          <span class="scan-link__label">Clinic address</span>
+          <span class="scan-link__value" data-scan="address">
+            312/A, The Crown, opp. Kalhar Bungalows,<br>Nr. Gangotri Circle, Nikol, Ahmedabad.
+          </span>
+        </span>
+        <span class="scan-link__go" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOT
+       ==================================================================== -->
+  <footer class="scan-foot">
+    <div class="scan-foot__rule" aria-hidden="true"></div>
+    <p>
+      <a href="../">Visit the full website</a> · <a href="../service/">All services</a>
+    </p>
+    <p style="margin-top:0.9rem">
+      Treatment recommendations are made after individual clinical assessment.
+      Results vary from person to person.
+    </p>
+    <p style="margin-top:0.9rem">© <span data-scan="year">2025</span> GLANZ · Nikol, Ahmedabad</p>
+  </footer>
+
+</main>
+
+<!-- ======================================================================
+     STICKY MOBILE ACTION BAR
+     ====================================================================== -->
+<nav class="scan-bar" aria-label="Contact actions">
+  <a class="scan-bar__btn" data-scan-link="phone" href="#">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5L17 13l4 1.5v3a2 2 0 01-2.2 2A17 17 0 013.5 5.2 2 2 0 015.5 3z"/></svg>
+    Call
+  </a>
+  <a class="scan-bar__btn" data-scan-link="whatsapp" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3a9 9 0 00-7.7 13.6L3.4 21l4.5-1.2A9 9 0 1012 3z"/></svg>
+    WhatsApp
+  </a>
+  <a class="scan-bar__btn scan-bar__btn--primary" data-scan-link="book" href="#">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+    Book
+  </a>
+</nav>
+
+<script src="../js/scan.js" defer></script>
+</body>
+</html>
