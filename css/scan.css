@@ -145,6 +145,25 @@ body.scan-page::after {
   letter-spacing: 0.16em;
   box-shadow: 0 16px 30px -16px rgba(80, 48, 30, 0.95);
 }
+
+/* WhatsApp + Instagram carry their own brand colour so the two highest-
+   engagement channels catch the eye first, the way they would on a printed
+   card. Kept to just these two — every other action stays on-theme. */
+.action--whatsapp {
+  background: linear-gradient(135deg, #3FCE63 0%, #25D366 55%, #1CA855 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 16px 30px -16px rgba(18, 110, 55, 0.75);
+}
+.action--whatsapp:hover { border-color: transparent; box-shadow: 0 18px 34px -14px rgba(18, 110, 55, 0.85); }
+
+.action--instagram {
+  background: linear-gradient(135deg, #4E5FD1 0%, #8134AF 32%, #C22F87 58%, #E4562F 82%, #F6A93B 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 16px 30px -16px rgba(150, 40, 100, 0.7);
+}
+.action--instagram:hover { border-color: transparent; box-shadow: 0 18px 34px -14px rgba(150, 40, 100, 0.8); }
 @media (max-width: 359px) {
   .action { font-size: 0.7rem; letter-spacing: 0.06em; padding-inline: 0.5rem; }
   .action svg { width: 16px; height: 16px; }
