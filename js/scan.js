@@ -21,7 +21,7 @@ const scanContent = {
   whatsapp:   '918320636243',           // country code + number, no symbols
   whatsappMessage: 'Hello GLANZ, I would like to book a consultation.',
   email:      'glanzbydrsakshi@gmail.com',
-  instagram:  'https://www.instagram.com/glanz_skin.hair.homeo/',
+  instagram:  'https://www.instagram.com/glanz_skin.hair.homeo?stkn=bmR3MnN1bzZhenJq',
   instagramHandle: '@glanz_skin.hair.homeo',
 
   /* ---- Location ---------------------------------------------------- */
