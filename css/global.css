@@ -654,6 +654,10 @@ body.is-locked { overflow: hidden; }
 }
 .form-status.is-visible { display: block; }
 .form-status a { color: var(--copper-deep); font-weight: 600; text-decoration: underline; }
+.form-status.is-error { border-left-color: #A8452F; }
+.form-status.is-error strong { color: #A8452F; }
+
+.btn:disabled { opacity: 0.65; cursor: not-allowed; }
 
 /* --------------------------------------------------------------------------
    10. FOOTER

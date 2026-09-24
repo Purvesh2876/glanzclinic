@@ -568,6 +568,13 @@
         </p>
 
         <form class="contact__form" id="contactForm" novalidate>
+          <!-- Web3Forms — see GLANZ_CONFIG.web3formsKey in js/main.js to change the key -->
+          <input type="hidden" name="access_key" value="cd164c81-4b46-4ff1-a68b-4e71835092c9">
+          <input type="hidden" name="subject" value="New appointment request — GLANZ website">
+          <input type="hidden" name="from_name" value="GLANZ website">
+          <!-- Honeypot: real visitors never see or fill this; bots that do get silently rejected -->
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
           <div class="field">
             <label for="cf-name">Name</label>
             <input id="cf-name" name="name" type="text" autocomplete="name" required>
@@ -602,10 +609,11 @@
           </div>
 
           <div class="form-foot">
-            <button class="btn" type="submit">Send Request</button>
+            <button class="btn" type="submit">
+              <span class="btn__label">Send Request</span>
+            </button>
             <p class="form-note">
-              The form is not connected to email yet — please call or WhatsApp us for an
-              immediate response.
+              For an immediate response, call or WhatsApp us directly.
             </p>
           </div>
         </form>

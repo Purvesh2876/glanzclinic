@@ -94,11 +94,28 @@ buttons above the contact details, full-width CTAs and 44–62px tap targets.
    link when available.
 4. **Booking** — `bookingUrl` currently points at the contact section. Point it
    at a booking platform or WhatsApp link when one exists.
-5. **Contact form** — front-end only. It validates, but **nothing is sent**, and
-   the on-screen message says so. The integration point is marked with
-   `TODO — BACKEND / EMAIL INTEGRATION GOES HERE` in `js/main.js`.
-6. **Social share image** — `og:image` currently points at the SVG lockup.
+5. **Social share image** — `og:image` currently points at the SVG lockup.
    Replace with a 1200×630 JPG/PNG for best results on WhatsApp/Facebook.
+
+## 3b. Contact form (Web3Forms)
+
+The appointment form on the homepage submits to [Web3Forms](https://web3forms.com) —
+no backend of ours involved. Submissions email straight to the address the access
+key was created with.
+
+- **Access key**: a hidden `<input name="access_key">` in the form in `index.html`.
+  It's meant to be public (it only authorises submissions *to* the linked inbox,
+  it can't read anything back), so there's no secret to protect.
+- **Where replies go**: set by whichever email confirmed the key at
+  [web3forms.com](https://web3forms.com) — change it there if the receiving
+  inbox needs to change, not in this repo.
+- **Spam guard**: a hidden `botcheck` checkbox (also in `index.html`) — real
+  visitors never see it, and Web3Forms silently drops any submission where
+  it's checked.
+- **Submit logic**: `initContactForm()` in `js/main.js` — validates client-side
+  first, then `fetch()`s the form as `FormData` to
+  `https://api.web3forms.com/submit`, and shows a success or error message in
+  `#formStatus` based on the response.
 
 ## 3a. Logo usage
 

@@ -190,11 +190,13 @@ function initImageFallback() {
 }
 
 /* --------------------------------------------------------------------------
-   6. Appointment form — front-end validation only
+   6. Appointment form — validates, then submits to Web3Forms
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
+  const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+  const submitLabel = submitBtn ? submitBtn.querySelector('.btn__label') : null;
   if (!form) return;
 
   const setError = (field, message) => {
@@ -244,34 +246,51 @@ function initContactForm() {
       return;
     }
 
-    /* ------------------------------------------------------------------
-       TODO — BACKEND / EMAIL INTEGRATION GOES HERE
-       Replace the block below with a real submission, e.g.
-
-         const data = Object.fromEntries(new FormData(form).entries());
-         fetch('https://your-endpoint.example/appointments', {
-           method: 'POST',
-           headers: { 'Content-Type': 'application/json' },
-           body: JSON.stringify(data)
-         })
-           .then((res) => { if (!res.ok) throw new Error('Request failed'); })
-           .then(() => showSuccess())
-           .catch(() => showError());
-
-       Until an endpoint exists, nothing is sent anywhere and the message
-       below states that clearly.
-       ------------------------------------------------------------------ */
-
-    if (status) {
-      status.innerHTML =
-        '<strong>Demo mode — this form is not connected yet.</strong><br>' +
-        'Your details have <em>not</em> been sent. Please call ' +
-        '<a href="tel:' + GLANZ_CONFIG.phone + '">' + GLANZ_CONFIG.phoneLabel + '</a> or ' +
-        '<a href="' + GLANZ_CONFIG.whatsappUrl + '" target="_blank" rel="noopener">message us on WhatsApp</a> ' +
-        'to confirm your appointment.';
-      status.classList.add('is-visible');
-      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    /* Web3Forms — access_key/subject/from_name/botcheck are hidden fields
+       already sitting in the form markup (index.html), so FormData picks
+       them up alongside the visible fields automatically. */
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      if (submitLabel) submitLabel.textContent = 'Sending…';
     }
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(form)
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (!data.success) throw new Error(data.message || 'Submission failed');
+
+        if (status) {
+          status.innerHTML =
+            '<strong>Thank you — your request has been sent.</strong><br>' +
+            'We will get back to you shortly to confirm a suitable time. For anything urgent, ' +
+            'call <a href="tel:' + GLANZ_CONFIG.phone + '">' + GLANZ_CONFIG.phoneLabel + '</a> or ' +
+            '<a href="' + GLANZ_CONFIG.whatsappUrl + '" target="_blank" rel="noopener">message us on WhatsApp</a>.';
+          status.classList.remove('is-error');
+          status.classList.add('is-visible');
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        form.reset();
+      })
+      .catch(() => {
+        if (status) {
+          status.innerHTML =
+            '<strong>Something went wrong sending your request.</strong><br>' +
+            'Please try again, or call <a href="tel:' + GLANZ_CONFIG.phone + '">' + GLANZ_CONFIG.phoneLabel + '</a> or ' +
+            '<a href="' + GLANZ_CONFIG.whatsappUrl + '" target="_blank" rel="noopener">message us on WhatsApp</a> instead.';
+          status.classList.add('is-error', 'is-visible');
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      })
+      .finally(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          if (submitLabel) submitLabel.textContent = 'Send Request';
+        }
+      });
   });
 }
 
