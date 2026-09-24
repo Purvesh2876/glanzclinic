@@ -263,17 +263,12 @@ function initContactForm() {
       .then((data) => {
         if (!data.success) throw new Error(data.message || 'Submission failed');
 
-        if (status) {
-          status.innerHTML =
-            '<strong>Thank you — your request has been sent.</strong><br>' +
-            'We will get back to you shortly to confirm a suitable time. For anything urgent, ' +
-            'call <a href="tel:' + GLANZ_CONFIG.phone + '">' + GLANZ_CONFIG.phoneLabel + '</a> or ' +
-            '<a href="' + GLANZ_CONFIG.whatsappUrl + '" target="_blank" rel="noopener">message us on WhatsApp</a>.';
-          status.classList.remove('is-error');
-          status.classList.add('is-visible');
-          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+        /* Success sends the visitor to /thank-you/, which auto-redirects back
+           to the homepage after 5s (see thank-you/index.html). */
         form.reset();
+        window.location.href = (window.location.protocol === 'file:')
+          ? 'thank-you/index.html'
+          : 'thank-you/';
       })
       .catch(() => {
         if (status) {

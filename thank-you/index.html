@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Request Received | GLANZ</title>
+<meta name="description" content="Your appointment request has been sent to GLANZ. We'll be in touch shortly.">
+<meta name="theme-color" content="#2B1B14">
+<link rel="canonical" href="https://www.glanzhealth.com/thank-you/">
+<!-- Reached only after a form submission — kept out of search results. -->
+<meta name="robots" content="noindex, nofollow">
+<!-- No-JS fallback: browsers with JS disabled still get sent home after 5s. -->
+<meta http-equiv="refresh" content="5;url=../">
+
+<link rel="icon" href="../assets/logo/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/logo/glanz-symbol.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body class="thankyou-page">
+
+<main class="thankyou" id="main">
+  <div class="thankyou__card">
+    <img class="thankyou__symbol" src="../assets/logo/glanz-symbol.png" alt="" width="320" height="320">
+
+    <p class="eyebrow eyebrow--center">Request Received</p>
+    <h1>Thank you — we'll be in touch shortly.</h1>
+    <p class="lead">
+      Your appointment request has been sent to GLANZ. We usually reply within
+      a few hours during clinic hours — for anything urgent, call or WhatsApp
+      us directly.
+    </p>
+
+    <div class="btn-group" style="justify-content:center">
+      <a class="btn" href="tel:+918320636243">Call Us</a>
+      <a class="btn btn--ghost" href="https://wa.me/918320636243?text=Hello%20GLANZ%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <p class="thankyou__redirect">
+      Returning to the homepage in <span id="count">5</span>s — <a href="../">go now</a>.
+    </p>
+  </div>
+</main>
+
+<script>
+  (function () {
+    var n = 5;
+    var el = document.getElementById('count');
+    var timer = setInterval(function () {
+      n -= 1;
+      if (el) el.textContent = String(Math.max(n, 0));
+      if (n <= 0) {
+        clearInterval(timer);
+        var dest = window.location.protocol === 'file:' ? '../index.html' : '../';
+        window.location.href = dest;
+      }
+    }, 1000);
+  })();
+</script>
+</body>
+</html>

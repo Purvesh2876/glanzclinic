@@ -796,7 +796,37 @@ body.is-locked { overflow: hidden; }
 .text-center { text-align: center; }
 
 /* --------------------------------------------------------------------------
-   14. REDUCED MOTION
+   14. THANK-YOU PAGE (/thank-you/)
+   -------------------------------------------------------------------------- */
+.thankyou-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 6vw, 3rem);
+  background:
+    radial-gradient(90% 120% at 50% 0%, rgba(176, 114, 74, 0.28) 0%, rgba(43, 27, 20, 0) 58%),
+    linear-gradient(165deg, #33211A 0%, #2B1B14 60%, #241610 100%);
+}
+.thankyou { width: 100%; max-width: 560px; position: relative; z-index: 1; }
+.thankyou__card {
+  text-align: center;
+  padding: clamp(2.25rem, 6vw, 3.25rem) clamp(1.5rem, 5vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(168deg, #FFFDFA 0%, #FBF2E9 55%, #F5E4D7 100%);
+  border: 1px solid rgba(255, 253, 250, 0.65);
+  box-shadow: 0 34px 70px -34px rgba(20, 11, 7, 0.65);
+}
+.thankyou__symbol { width: 64px; height: auto; margin: 0 auto 1.5rem; }
+.thankyou__card h1 { font-size: clamp(1.75rem, 4vw, 2.3rem); margin-bottom: 0.85rem; }
+.thankyou__card .lead { margin-bottom: 1.75rem; }
+.thankyou__card .btn-group { margin-bottom: 1.75rem; }
+.thankyou__redirect { font-size: 0.85rem; color: var(--muted-soft); }
+.thankyou__redirect a { color: var(--copper-deep); font-weight: 600; text-decoration: underline; }
+
+/* --------------------------------------------------------------------------
+   15. REDUCED MOTION
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
